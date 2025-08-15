@@ -28,7 +28,7 @@ Built with **React**, **Vite**, **TailwindCSS**, and **shadcn/ui**, the dashboar
 
 ## ⚙️ Installation
 
-1. **Clone the repository**
+**Clone the repository**
    ```bash
    git clone https://github.com/KursonProject/E-commerce-admin.git
    cd E-commerce-admin
