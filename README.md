@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
+# 📊 Lumino Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **Admin Dashboard** for **Lumino**, a platform for selling **website templates** and **AI agents**.  
+Built with **React**, **Vite**, **TailwindCSS**, and **shadcn/ui**, the dashboard provides a modern, responsive, and high-performance interface for managing products, orders, customers, and platform settings.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📦 **Product Management** – Add, edit, and manage website templates & AI agents.
+- 🛒 **Order Management** – Track customer orders and payment statuses.
+- 👤 **User Management** – View and manage platform users.
+- 📈 **Dashboard Analytics** – Overview of sales, revenue, and performance metrics.
+- 🎨 **Modern UI** – Built with TailwindCSS and shadcn/ui for a sleek look.
+- ⚡ **Fast Development** – Powered by Vite for an optimized workflow.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [React](https://react.dev/) – Frontend library for building UI
+- [Vite](https://vitejs.dev/) – Next-generation build tool
+- [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) – Reusable UI components
+- [Radix UI](https://www.radix-ui.com/) – Accessible UI primitives
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ⚙️ Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/KursonProject/E-commerce-admin.git
+   cd E-commerce-admin
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+Initialize shadcn/ui (if not already configured)
+
+bash
+Copy
+Edit
+npx shadcn-ui init
+Run the development server
+
+bash
+Copy
+Edit
+npm run dev
+📂 Folder Structure
+csharp
+Copy
+Edit
+.
+├── src
+│   ├── components   # Reusable UI components
+│   ├── pages        # Dashboard pages (Products, Orders, Users, etc.)
+│   ├── lib          # Utility functions & API helpers
+│   ├── styles       # TailwindCSS & global styles
+│   └── main.tsx     # Application entry point
+├── public           # Static assets
+├── index.html       # Main HTML file
+└── tailwind.config.js
+🖥 Running the App
+bash
+Copy
+Edit
+npm run dev
+Open:
+
+arduino
+Copy
+Edit
+http://localhost:5173
+📦 Build for Production
+bash
+Copy
+Edit
+npm run build
+The build output will be available in the dist/ folder.
+
+📜 License
+MIT
+
+💡 Tip:
+To add a new shadcn/ui component:
+
+bash
+Copy
+Edit
+npx shadcn-ui add button
+See more: shadcn/ui Documentation
