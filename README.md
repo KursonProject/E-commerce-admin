@@ -32,66 +32,40 @@ Built with **React**, **Vite**, **TailwindCSS**, and **shadcn/ui**, the dashboar
    ```bash
    git clone https://github.com/KursonProject/E-commerce-admin.git
    cd E-commerce-admin
+   ```
 Install dependencies
 
-bash
-Copy
-Edit
+```bash
 npm install
 # or
 yarn install
+```
 Initialize shadcn/ui (if not already configured)
 
-bash
-Copy
-Edit
+```bash
 npx shadcn-ui init
+```
 Run the development server
-
-bash
-Copy
-Edit
+```bash
 npm run dev
+```
 📂 Folder Structure
-csharp
-Copy
-Edit
-.
+```csharp
 ├── src
 │   ├── components   # Reusable UI components
 │   ├── pages        # Dashboard pages (Products, Orders, Users, etc.)
-│   ├── lib          # Utility functions & API helpers
-│   ├── styles       # TailwindCSS & global styles
+│   ├── hooks        # Utility functions & API helpers
+│   ├── app.tsx      # place me router and middleware
+│   ├── index.css    # TailwindCSS & global styles
 │   └── main.tsx     # Application entry point
 ├── public           # Static assets
 ├── index.html       # Main HTML file
-└── tailwind.config.js
+```
+
 🖥 Running the App
-bash
-Copy
-Edit
+```bash
 npm run dev
+```
 Open:
 
-arduino
-Copy
-Edit
 http://localhost:5173
-📦 Build for Production
-bash
-Copy
-Edit
-npm run build
-The build output will be available in the dist/ folder.
-
-📜 License
-MIT
-
-💡 Tip:
-To add a new shadcn/ui component:
-
-bash
-Copy
-Edit
-npx shadcn-ui add button
-See more: shadcn/ui Documentation
